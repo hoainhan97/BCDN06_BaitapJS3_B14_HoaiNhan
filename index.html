@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
@@ -40,19 +39,70 @@
               <button id="btnSapXep" class="btn btn-primary">Sắp xếp</button>
               <p id="txtSapXep" class="alert alert-danger mt-1"></p>
             
-             
+             <!-- BÀI TẬP CHƯƠNG TRÌNH CHÀO HỎI  -->
               <h2 class="text-danger mt-5" >Chương trình chào hỏi</h2>
              <div class="form-group">
-               <select class="form-control" name="" id="">
-                 <option  value="">Chọn thành viên</option>
-                 <option id="bo" value="B">Bố</option>
-                 <option id="me" value="M">Mẹ</option>
-                 <option id="anhtrai" value="A">Anh Trai</option>
-                 <option id="emgai" value="E">Em gái</option>
+               <select class="form-control" name="" id="thanhVien">
+                 <option   value="">Chọn thành viên</option>
+                 <option value="B">Bố</option>
+                 <option value="M">Mẹ</option>
+                 <option value="A">Anh Trai</option>
+                 <option value="E">Em gái</option>
                </select>
 
              </div>
-             <button id="btnChao" class="btn btn-primary">Gửi lời chào</button>
+             <button onclick="chaoHoi()" class="btn btn-primary">Gửi lời chào</button>
+             <p id="btnChao" class="alert alert-danger mt-1"></p>
+
+
+
+             <!-- BÀI TẬP ĐẾM SỐ CHẴN LẺ  -->
+             <h2 class="text-danger mt-5">ĐẾM SỐ CHẴN LẺ</h2>
+            <div class="form-group">
+              <label for="">Số thứ nhất</label>
+              <input type="number"
+                class="form-control" name="" id="num1" placeholder="Nhập số thứ 1">
+              
+            </div>
+            <div class="form-group">
+                <label for="">Số thứ hai</label>
+                <input type="number"
+                  class="form-control" name="" id="num2" placeholder="Nhập số thứ 2">
+                
+              </div>
+              <div class="form-group">
+                <label for="">Số thứ 3</label>
+                <input type="number"
+                  class="form-control" name="" id="num3" placeholder="Nhập số thứ 3">
+                
+              </div>
+              <button id="btnDem" class="btn btn-primary">Đếm</button>
+              <p id="txtDem" class="alert alert-danger mt-1"></p>
+
+
+              <!-- BÀI TẬP ĐOÁN HÌNH TAM GIÁC  -->
+              <h2 class="text-danger mt-5">ĐOÁN HÌNH TAM GIÁC</h2>
+              <div class="form-group">
+                <label for="">Cạnh 1</label>
+                <input type="number"
+                  class="form-control" name="" id="canh1" placeholder="Nhập độ dài cạnh 1">
+                
+              </div>
+              <div class="form-group">
+                  <label for="">Cạnh 2</label>
+                  <input type="number"
+                    class="form-control" name="" id="canh2" placeholder="Nhập độ dài cạnh 2">
+                  
+                </div>
+                <div class="form-group">
+                  <label for="">Cạnh 3</label>
+                  <input type="number"
+                    class="form-control" name="" id="canh3" placeholder="Nhập độ dài cạnh 3">
+                  
+                </div>
+                <button id="btnDoan" class="btn btn-primary">Dự Đoán</button>
+                <p id="txtDoan" class="alert alert-danger mt-1"></p>
+
         </div>
     </div>
 
